@@ -1,0 +1,38 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python analyze_birds.py:*)",
+      "Bash(python filter_birds.py:*)",
+      "Bash(chmod:*)",
+      "Bash(az account show:*)",
+      "Bash(jq:*)",
+      "Bash(bash scripts/deploy-infrastructure.sh:*)",
+      "Bash(az provider register:*)",
+      "Bash(az provider show:*)",
+      "Bash(az group delete:*)",
+      "Bash(az group:*)",
+      "Bash(az cognitiveservices account purge:*)",
+      "Bash(az ad signed-in-user show:*)",
+      "Bash(./scripts/deploy-infrastructure.sh:*)",
+      "Bash(./scripts/upload-content.sh:*)",
+      "Bash(az role assignment create:*)",
+      "Bash(az account set:*)",
+      "Bash(az storage account show:*)",
+      "Bash(az account list:*)",
+      "Bash(az role assignment list:*)",
+      "Bash(az account get-access-token:*)",
+      "Bash(az deployment group create:*)",
+      "Bash(./scripts/deploy-service.sh:*)",
+      "Bash(./scripts/end-to-end-test.sh:*)",
+      "Bash(kubectl logs:*)",
+      "Bash(curl:*)",
+      "Bash(kubectl top pods:*)",
+      "Bash(kubectl get:*)",
+      "Bash(az acr build:*)",
+      "Bash(kubectl rollout:*)",
+      "Bash(kubectl rollout status:*)",
+      "Bash(git remote add:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}

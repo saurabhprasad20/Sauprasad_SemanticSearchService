@@ -1,0 +1,84 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: semantic-search
+  namespace: semantic-search
+  labels:
+    app: semantic-search
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: semantic-search
+  template:
+    metadata:
+      labels:
+        app: semantic-search
+        azure.workload.identity/use: "true"
+    spec:
+      serviceAccountName: semantic-search-sa
+      containers:
+      - name: api
+        image: semanticsearchacrdva5vzh4viaos.azurecr.io/semantic-search:latest
+        imagePullPolicy: Always
+        ports:
+        - name: http
+          containerPort: 8080
+          protocol: TCP
+        env:
+        - name: ASPNETCORE_ENVIRONMENT
+          value: "Production"
+        - name: ASPNETCORE_URLS
+          value: "http://+:8080"
+        - name: AzureOpenAI__Endpoint
+          valueFrom:
+            configMapKeyRef:
+              name: semantic-search-config
+              key: AZURE_OPENAI_ENDPOINT
+        - name: AzureOpenAI__EmbeddingDeployment
+          valueFrom:
+            configMapKeyRef:
+              name: semantic-search-config
+              key: AZURE_OPENAI_DEPLOYMENT
+        - name: BlobStorage__Url
+          valueFrom:
+            configMapKeyRef:
+              name: semantic-search-config
+              key: BLOB_STORAGE_URL
+        - name: BlobStorage__ContainerName
+          valueFrom:
+            configMapKeyRef:
+              name: semantic-search-config
+              key: BLOB_CONTAINER_NAME
+        - name: BlobStorage__FileName
+          valueFrom:
+            configMapKeyRef:
+              name: semantic-search-config
+              key: BLOB_FILE_NAME
+        resources:
+          requests:
+            memory: "512Mi"
+            cpu: "250m"
+          limits:
+            memory: "1Gi"
+            cpu: "500m"
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: 8080
+            scheme: HTTP
+          initialDelaySeconds: 15
+          periodSeconds: 10
+          timeoutSeconds: 5
+          successThreshold: 1
+          failureThreshold: 3
+        livenessProbe:
+          httpGet:
+            path: /healthz
+            port: 8080
+            scheme: HTTP
+          initialDelaySeconds: 30
+          periodSeconds: 15
+          timeoutSeconds: 5
+          successThreshold: 1
+          failureThreshold: 3

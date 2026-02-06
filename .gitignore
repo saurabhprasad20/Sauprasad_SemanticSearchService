@@ -1,0 +1,59 @@
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Azure Functions
+local.settings.json
+__blobstorage__/
+__queuestorage__/
+__azurite_db*__.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv
+
+# Scripts output
+scripts/.deployment-outputs.env
+
+# Docker
+.dockerignore
+
+# IDEs
+.idea/
+.vscode/settings.json
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Secrets
+*.pfx
+*.key
+*.pem
+secrets/

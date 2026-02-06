@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: semantic-search-config
+  namespace: semantic-search
+data:
+  BLOB_STORAGE_URL: "https://semsearchdva5vzh4viaos.blob.core.windows.net"
+  BLOB_CONTAINER_NAME: "content"
+  BLOB_FILE_NAME: "birds_india_50.csv"
+  AZURE_OPENAI_ENDPOINT: "https://semanticsearch-openai-dev.openai.azure.com/"
+  AZURE_OPENAI_DEPLOYMENT: "text-embedding-3-small"

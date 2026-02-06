@@ -1,0 +1,18 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "location": {
+      "value": "eastus"
+    },
+    "environment": {
+      "value": "dev"
+    },
+    "baseName": {
+      "value": "semanticsearch"
+    },
+    "userObjectId": {
+      "value": "e884571a-2c00-4225-bb3b-84f812e8cf36"
+    }
+  }
+}

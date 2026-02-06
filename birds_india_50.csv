@@ -1,0 +1,48 @@
+name,scientific name,presence,order,family
+Indian Peafowl,Pavo cristatus,R,GALLIFORMES,Phasianidae
+Red Junglefowl,Gallus gallus,R,GALLIFORMES,Phasianidae
+Himalayan Monal,Lophophorus impejanus,R,GALLIFORMES,Phasianidae
+Great Hornbill,Buceros bicornis,R,BUCEROTIFORMES,Bucerotidae
+Indian Grey Hornbill,Ocyceros birostris,R,BUCEROTIFORMES,Bucerotidae
+Common Hoopoe,Upupa epops,R,BUCEROTIFORMES,Upupidae
+White-throated Kingfisher,Halcyon smyrnensis,R,CORACIIFORMES,Alcedinidae
+Common Kingfisher,Alcedo atthis,R,CORACIIFORMES,Alcedinidae
+Indian Roller,Coracias benghalensis,R,CORACIIFORMES,Coraciidae
+Green Bee-eater,Merops orientalis,R,CORACIIFORMES,Meropidae
+Coppersmith Barbet,Psilopogon haemacephalus,R,PICIFORMES,Megalaimidae
+Great Barbet,Psilopogon virens,R,PICIFORMES,Megalaimidae
+Black-rumped Flameback,Dinopium benghalense,R,PICIFORMES,Picidae
+Indian Pitta,Pitta brachyura,R,PASSERIFORMES,Pittidae
+Asian Fairy-bluebird,Irena puella,R,PASSERIFORMES,Irenidae
+Common Iora,Aegithina tiphia,R,PASSERIFORMES,Aegithinidae
+Scarlet Minivet,Pericrocotus speciosus,R,PASSERIFORMES,Campophagidae
+Black Drongo,Dicrurus macrocercus,R,PASSERIFORMES,Dicruridae
+House Crow,Corvus splendens,R,PASSERIFORMES,Corvidae
+Red-vented Bulbul,Pycnonotus cafer,R,PASSERIFORMES,Pycnonotidae
+Barn Swallow,Hirundo rustica,W,PASSERIFORMES,Hirundinidae
+Common Sandpiper,Actitis hypoleucos,W,CHARADRIIFORMES,Scolopacidae
+Wood Sandpiper,Tringa glareola,W,CHARADRIIFORMES,Scolopacidae
+Green Sandpiper,Tringa ochropus,W,CHARADRIIFORMES,Scolopacidae
+Common Redshank,Tringa totanus,W,CHARADRIIFORMES,Scolopacidae
+Ruff,Calidris pugnax,W,CHARADRIIFORMES,Scolopacidae
+Temminck’s Stint,Calidris temminckii,W,CHARADRIIFORMES,Scolopacidae
+Little Stint,Calidris minuta,W,CHARADRIIFORMES,Scolopacidae
+Northern Lapwing,Vanellus vanellus,W,CHARADRIIFORMES,Charadriidae
+Pacific Golden Plover,Pluvialis fulva,W,CHARADRIIFORMES,Charadriidae
+Northern Pintail,Anas acuta,W,ANSERIFORMES,Anatidae
+Northern Shoveler,Spatula clypeata,W,ANSERIFORMES,Anatidae
+Garganey,Spatula querquedula,W,ANSERIFORMES,Anatidae
+Common Teal,Anas crecca,W,ANSERIFORMES,Anatidae
+Tufted Duck,Aythya fuligula,W,ANSERIFORMES,Anatidae
+Ferruginous Duck,Aythya nyroca,W,ANSERIFORMES,Anatidae
+Common Pochard,Aythya ferina,W,ANSERIFORMES,Anatidae
+Greater Flamingo,Phoenicopterus roseus,W,PHOENICOPTERIFORMES,Phoenicopteridae
+Demoiselle Crane,Grus virgo,W,GRUIFORMES,Gruidae
+Common Kestrel,Falco tinnunculus,W,FALCONIFORMES,Falconidae
+Steppe Eagle,Aquila nipalensis,W,ACCIPITRIFORMES,Accipitridae
+Western Marsh Harrier,Circus aeruginosus,W,ACCIPITRIFORMES,Accipitridae
+Pied Wheatear,Oenanthe pleschanka,W,PASSERIFORMES,Muscicapidae
+Isabelline Wheatear,Oenanthe isabellina,W,PASSERIFORMES,Muscicapidae
+Bluethroat,Luscinia svecica,W,PASSERIFORMES,Muscicapidae
+Rosy Starling,Pastor roseus,W,PASSERIFORMES,Sturnidae
+Yellow-browed Warbler,Phylloscopus inornatus,W,PASSERIFORMES,Phylloscopidae
